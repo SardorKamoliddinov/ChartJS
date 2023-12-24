@@ -1,8 +1,8 @@
-### npm start
+## npm start
 If you want to start
 
-### npm run build
+## npm run build
 If you want to build
 
-### view
+## view
 sk99-diagram.netlify.app
