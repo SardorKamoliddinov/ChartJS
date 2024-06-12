@@ -8,7 +8,7 @@ import {
   Legend,
   Tooltip,
 } from "chart.js";
-import "./../../../index.css";
+import "./../../../App.css";
 import { Bar } from "react-chartjs-2";
 ChartJS.register(
   BarController,
@@ -36,8 +36,8 @@ const Ipoteka = () => {
 
   return (
     <div>
-      <div class="chartCard">
-        <div class="chartBox">
+      <div className="chartCard">
+        <div className="chartBox">
           <h2>{data.datasets[0].label}</h2>
           <Bar data={data} options={options}></Bar>
         </div>

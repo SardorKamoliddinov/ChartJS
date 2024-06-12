@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, Chart } from "chart.js";
 import { Doughnut, Pie, getElementsAtEvent } from "react-chartjs-2";
-import "./../../index.css";
+import "./../../App.css";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 Chart.register(ChartDataLabels);
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const Piechart = () => {
+const MainCase = () => {
   const data = {
     labels: [
       "Ипотека кредитлари",
@@ -144,8 +144,8 @@ const Piechart = () => {
 
   return (
     <div>
-      <div class="chartCard">
-        <div class="chartBox">
+      <div className="chartCard">
+        <div className="chartBox">
           <h2>{data.datasets[0].label}</h2>
           <Doughnut
             data={data}
@@ -155,7 +155,7 @@ const Piechart = () => {
             plugins={[textCenter]}
           ></Doughnut>
         </div>
-        <div class="chartBox">
+        <div className="chartBox">
           <h2>{data2.datasets[0].label}</h2>
           <Pie
             data={data2}
@@ -169,4 +169,4 @@ const Piechart = () => {
   );
 };
 
-export default Piechart;
+export default MainCase;

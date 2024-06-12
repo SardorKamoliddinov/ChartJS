@@ -1,5 +1,5 @@
 import React from "react";
-import "./../../../index.css";
+import "./../../../App.css";
 import {
   Chart as ChartJS,
   LineController,
@@ -10,7 +10,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { Bubble, Line, Pie } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 ChartJS.register(
   LineController,
   LineElement,
@@ -36,8 +36,8 @@ const Talim = () => {
   const options = {};
   return (
     <div>
-      <div class="chartCard">
-        <div class="chartBox">
+      <div className="chartCard">
+        <div className="chartBox">
           <h2>{data.datasets[0].label}</h2>
           <Line data={data} options={options}></Line>
         </div>
